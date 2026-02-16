@@ -76,7 +76,7 @@ const Dashboard: React.FC = () => {
     <div className="space-y-12 animate-fadeIn py-12">
       <header className="text-center max-w-3xl mx-auto px-4">
         <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
-          Portfolio & Hub
+          Portfolio & Proj
         </span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
           Mina Projekt & Verktyg

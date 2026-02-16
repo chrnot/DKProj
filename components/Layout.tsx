@@ -26,8 +26,8 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                 </button>
               )}
               <Link to="/" className="flex items-center gap-2 group">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-blue-200 group-hover:scale-105 transition-transform">P</div>
-                <span className="text-xl font-black tracking-tight text-slate-900">Project<span className="text-blue-600">Hub</span></span>
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black text-xs shadow-lg shadow-blue-200 group-hover:scale-105 transition-transform">DK</div>
+                <span className="text-xl font-black tracking-tight text-slate-900">DK<span className="text-blue-600">Proj</span></span>
               </Link>
             </div>
             
@@ -77,7 +77,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-2">Internal Management Suite</p>
           <div className="text-sm text-slate-500 font-medium">
-            &copy; {new Date().getFullYear()} Project Hub Portfolio &bull; Danderyds Kommun
+            &copy; {new Date().getFullYear()} DKProj Portfolio &bull; Danderyds Kommun
           </div>
         </div>
       </footer>
