@@ -21,7 +21,7 @@ const RektorerGBG: React.FC = () => {
         { time: '08:00-09:30', title: 'Gemensam Frukost & Diskussion', desc: 'Frukostbuffé på hotellet. Sista timmen (från 08:30) viks åt gemensam diskussion kring matematikundervisningen på våra skolor och generella utmaningar.', icon: '☕' },
         { time: '10:30-12:00', title: 'Studiebesök: Hvidfeldtska Gymnasiet', desc: 'Helena Franke tar emot oss för rundvandring och samtal om deras pedagogiska arbete.', icon: '🏫', link: 'https://www.google.com/maps/search/?api=1&query=Hvidfeldtska+gymnasiet' },
         { time: '12:30', title: 'Lunch: Berzelii Choklad', desc: 'Magasinsgatan 12. Sopplunch i hjärtat av Göteborg.', icon: '🥣', link: 'https://www.google.com/maps/search/?api=1&query=Berzelii+Choklad+Göteborg' },
-        { time: '13:30', title: 'Mathivation', desc: 'Västsvenska Handelskammaren, Parkgatan 49. Möte med Raja.', icon: '📐', link: 'https://www.google.com/maps/search/?api=1&query=Parkgatan+49+Göteborg' },
+        { time: '14:00', title: 'Mathivation', desc: 'Västsvenska Handelskammaren, Parkgatan 49. Möte med Raja.', icon: '📐', link: 'https://www.google.com/maps/search/?api=1&query=Parkgatan+49+Göteborg' },
         { time: '15:00', title: 'Eftermiddagsfika: Da Matteo', desc: 'Diskussion och kaffe på Magasinsgatan 17A.', icon: '🥐', link: 'https://www.google.com/maps/search/?api=1&query=Da+Matteo+Magasinsgatan' },
         { time: '19:15', title: 'Middag på Levantine', desc: 'Aschebergsgatan 22. Fransk New York Bistro.', icon: '🍷', link: 'https://www.google.com/maps/search/?api=1&query=Levantine+Göteborg' }
       ]
