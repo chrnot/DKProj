@@ -9,7 +9,7 @@ const RektorerGBG: React.FC = () => {
       events: [
         { time: '14:09', title: 'Tåg mot Göteborg', desc: 'Avgång från Stockholms Centralstation.', icon: '🚂' },
         { time: '17:42', title: 'Ankomst Göteborg', desc: 'Incheckning på Clarion Hotel Post (Drottningtorget 10).', icon: '🏨', link: 'https://www.google.com/maps/search/?api=1&query=Clarion+Hotel+Post+Göteborg' },
-        { time: '19:30', title: 'Middag på Gurras', desc: 'Bokat av Petra. Postgatan 16. Moderna smaker i högt tempo.', icon: '🍽️', link: 'https://gurras.se/' }
+        { time: '19:15', title: 'Middag på Levantine', desc: 'Aschebergsgatan 22. Fransk New York Bistro.', icon: '🍷', link: 'https://www.google.com/maps/search/?api=1&query=Levantine+Göteborg' }
       ]
     },
     {
@@ -23,7 +23,7 @@ const RektorerGBG: React.FC = () => {
         { time: '12:30', title: 'Lunch: Berzelii Choklad', desc: 'Magasinsgatan 12. Sopplunch i hjärtat av Göteborg.', icon: '🥣', link: 'https://www.google.com/maps/search/?api=1&query=Berzelii+Choklad+Göteborg' },
         { time: '14:00', title: 'Mathivation', desc: 'Västsvenska Handelskammaren, Parkgatan 49. Möte med Raja.', icon: '📐', link: 'https://www.google.com/maps/search/?api=1&query=Parkgatan+49+Göteborg' },
         { time: '15:00', title: 'Eftermiddagsfika: Da Matteo', desc: 'Diskussion och kaffe på Magasinsgatan 17A.', icon: '🥐', link: 'https://www.google.com/maps/search/?api=1&query=Da+Matteo+Magasinsgatan' },
-        { time: '19:15', title: 'Middag på Levantine', desc: 'Aschebergsgatan 22. Fransk New York Bistro.', icon: '🍷', link: 'https://www.google.com/maps/search/?api=1&query=Levantine+Göteborg' }
+        { time: '19:30', title: 'Middag på Gurras', desc: 'Bokat av Petra. Postgatan 16. Moderna smaker i högt tempo.', icon: '🍽️', link: 'https://gurras.se/' }
       ]
     },
     {
