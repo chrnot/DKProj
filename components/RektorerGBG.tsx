@@ -42,7 +42,39 @@ const RektorerGBG: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-12 px-4 animate-fadeIn space-y-12">
+    <div className="max-w-6xl mx-auto py-12 px-4 animate-fadeIn space-y-12 print:py-0 print:px-0 print:max-w-none">
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media print {
+          body { background: white !important; }
+          .no-print { display: none !important; }
+          .print-container { padding: 0 !important; margin: 0 !important; width: 100% !important; }
+          header { height: auto !important; min-height: 200px !important; border-radius: 1rem !important; margin-bottom: 2rem !important; }
+          header img { height: 200px !important; opacity: 0.3 !important; }
+          header .text-white { color: black !important; }
+          header .bg-slate-950 { background: transparent !important; }
+          section { break-inside: avoid; border-radius: 1rem !important; margin-bottom: 2rem !important; border: 1px solid #e2e8f0 !important; box-shadow: none !important; }
+          .grid { display: block !important; }
+          .lg\\:col-span-8, .lg\\:col-span-4 { width: 100% !important; margin-bottom: 2rem !important; }
+          .sticky { position: static !important; }
+          .bg-slate-950 { background: white !important; color: black !important; border: 1px solid #e2e8f0 !important; border-radius: 1rem !important; box-shadow: none !important; }
+          .text-white { color: black !important; }
+          .bg-white\\/5 { background: #f8fafc !important; }
+          .border-white\\/10 { border-color: #e2e8f0 !important; }
+          .shadow-2xl, .shadow-sm, .shadow-inner { box-shadow: none !important; }
+          .animate-fadeIn { animation: none !important; transform: none !important; }
+        }
+      ` }} />
+
+      <button 
+        onClick={() => window.print()}
+        className="fixed bottom-8 right-8 bg-blue-600 text-white px-6 py-3 rounded-full shadow-2xl hover:bg-blue-700 transition-all z-50 no-print flex items-center gap-2 font-bold group"
+      >
+        <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 00-2-2h2m2 4h10a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+        </svg>
+        Skriv ut programmet
+      </button>
+
       <header className="relative h-[32rem] rounded-[4rem] overflow-hidden shadow-2xl group border-4 border-white bg-slate-900">
         <img 
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" 
@@ -104,7 +136,7 @@ const RektorerGBG: React.FC = () => {
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-[11px] font-black text-blue-600 uppercase tracking-[0.25em] bg-blue-50 px-4 py-1.5 rounded-full">{event.time}</span>
                         {event.link && (
-                          <a href={event.link} target="_blank" rel="noopener noreferrer" className="text-[10px] font-black text-slate-400 hover:text-blue-600 transition-colors uppercase tracking-[0.2em] flex items-center gap-2 group/link">
+                          <a href={event.link} target="_blank" rel="noopener noreferrer" className="text-[10px] font-black text-slate-400 hover:text-blue-600 transition-colors uppercase tracking-[0.2em] flex items-center gap-2 group/link no-print">
                             Visa Destination
                             <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
