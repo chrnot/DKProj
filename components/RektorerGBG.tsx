@@ -42,26 +42,74 @@ const RektorerGBG: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-12 px-4 animate-fadeIn space-y-12 print:py-0 print:px-0 print:max-w-none">
+    <div className="max-w-6xl mx-auto py-12 px-4 animate-fadeIn space-y-12 print:py-4 print:px-8 print:max-w-none print:space-y-4">
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
-          body { background: white !important; }
+          body { background: white !important; color: black !important; font-size: 12px !important; }
           .no-print { display: none !important; }
-          .print-container { padding: 0 !important; margin: 0 !important; width: 100% !important; }
-          header { height: auto !important; min-height: 200px !important; border-radius: 1rem !important; margin-bottom: 2rem !important; }
-          header img { height: 200px !important; opacity: 0.3 !important; }
-          header .text-white { color: black !important; }
-          header .bg-slate-950 { background: transparent !important; }
-          section { break-inside: avoid; border-radius: 1rem !important; margin-bottom: 2rem !important; border: 1px solid #e2e8f0 !important; box-shadow: none !important; }
-          .grid { display: block !important; }
-          .lg\\:col-span-8, .lg\\:col-span-4 { width: 100% !important; margin-bottom: 2rem !important; }
-          .sticky { position: static !important; }
-          .bg-slate-950 { background: white !important; color: black !important; border: 1px solid #e2e8f0 !important; border-radius: 1rem !important; box-shadow: none !important; }
-          .text-white { color: black !important; }
-          .bg-white\\/5 { background: #f8fafc !important; }
-          .border-white\\/10 { border-color: #e2e8f0 !important; }
-          .shadow-2xl, .shadow-sm, .shadow-inner { box-shadow: none !important; }
+          
+          /* Compact Header */
+          header { 
+            height: auto !important; 
+            min-height: 0 !important; 
+            padding: 1rem !important; 
+            margin-bottom: 1rem !important; 
+            border: 2px solid #000 !important;
+            background: #f8fafc !important;
+          }
+          header img { display: none !important; }
+          header .absolute { position: relative !important; inset: auto !important; padding: 0 !important; }
+          header h1 { font-size: 24pt !important; color: black !important; margin: 0 !important; }
+          header span, header p { color: black !important; }
+          header .bg-blue-600 { background: transparent !important; border: 1px solid black !important; color: black !important; }
+
+          /* Compact Sections */
+          section { 
+            break-inside: avoid; 
+            border-radius: 0.5rem !important; 
+            margin-bottom: 1rem !important; 
+            border: 1px solid #ccc !important; 
+          }
+          section img, section .relative.h-56 { display: none !important; }
+          section .p-12 { padding: 1rem !important; }
+          section h2 { 
+            font-size: 18pt !important; 
+            color: black !important; 
+            margin-bottom: 0.5rem !important;
+            padding: 0.5rem 1rem !important;
+            background: #eee !important;
+            display: block !important;
+          }
+          
+          /* Event list compression */
+          .space-y-10 { space-y: 0.5rem !important; }
+          .p-12.space-y-10 { padding: 0.75rem !important; }
+          .flex.gap-10 { gap: 1rem !important; }
+          .w-16.h-16 { width: 2.5rem !important; height: 2.5rem !important; font-size: 1.25rem !important; }
+          .pb-10 { pb: 0.5rem !important; }
+          h3 { font-size: 14pt !important; margin-bottom: 0.25rem !important; }
+          p.text-lg { font-size: 10pt !important; line-height: 1.4 !important; }
+          
+          /* Sidebar compression */
+          .lg\\:col-span-12 { display: block !important; }
+          .lg\\:col-span-8 { width: 100% !important; }
+          .lg\\:col-span-4 { width: 100% !important; margin-top: 1rem !important; }
+          .bg-slate-950 { 
+            background: white !important; 
+            color: black !important; 
+            border: 1px solid #ccc !important; 
+            padding: 1rem !important; 
+            border-radius: 0.5rem !important; 
+          }
+          .bg-slate-950 h3 { margin-bottom: 1rem !important; padding-bottom: 0.5rem !important; }
+          .space-y-12 { space-y: 0.5rem !important; }
+          .flex.gap-6 { gap: 0.5rem !important; margin-bottom: 0.5rem !important; }
+          .w-14.h-14 { width: 2rem !important; height: 2rem !important; font-size: 1rem !important; }
+          
+          /* General cleanup */
+          .shadow-2xl, .shadow-sm, .shadow-inner, .hover\\:shadow-2xl { box-shadow: none !important; }
           .animate-fadeIn { animation: none !important; transform: none !important; }
+          .transition-all { transition: none !important; }
         }
       ` }} />
 
