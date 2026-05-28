@@ -165,7 +165,7 @@ const GradeChangeForm: React.FC = () => {
                 />
                 <div className="text-sm">
                   <span className="font-bold text-gray-800">Rättelse av skrivfel</span>
-                  <p className="text-gray-500 italic text-xs">(Skollagen 26 kap. 39 §)</p>
+                  <p className="text-gray-500 italic text-xs">(Skollagen 3 kap 19§)</p>
                 </div>
               </label>
               <label className="flex items-start gap-4 cursor-pointer group">
@@ -178,7 +178,7 @@ const GradeChangeForm: React.FC = () => {
                 />
                 <div className="text-sm">
                   <span className="font-bold text-gray-800">Ändring av betyg</span>
-                  <p className="text-gray-500 italic text-xs">(Skollagen 26 kap. 40 §)</p>
+                  <p className="text-gray-500 italic text-xs">(Skollagen 3 kap 20§)</p>
                 </div>
               </label>
             </div>
