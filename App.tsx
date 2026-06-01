@@ -3,7 +3,6 @@ import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import GradeChangeForm from './components/GradeChangeForm';
 import KoladaDashboard from './components/KoladaDashboard';
-import RektorerGBG from './components/RektorerGBG';
 import StaffOnboardingChecklist from './components/StaffOnboardingChecklist';
 import { Layout } from './components/Layout';
 
@@ -15,7 +14,6 @@ const App: React.FC = () => {
           <Route path="/" element={<Dashboard />} />
           <Route path="/grade-form" element={<GradeChangeForm />} />
           <Route path="/analysis" element={<KoladaDashboard />} />
-          <Route path="/rektorer-gbg" element={<RektorerGBG />} />
           <Route path="/staff-checklist" element={<StaffOnboardingChecklist />} />
           {/* Placeholder for future projects */}
           <Route path="/placeholder" element={

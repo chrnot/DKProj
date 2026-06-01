@@ -50,12 +50,6 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               >
                 Betygsblankett
               </Link>
-              <Link 
-                to="/rektorer-gbg" 
-                className={`inline-flex items-center px-1 pt-1 border-b-2 transition-all ${location.pathname === '/rektorer-gbg' ? 'border-blue-500 text-slate-900' : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'}`}
-              >
-                Göteborg 2026
-              </Link>
             </div>
 
             <div className="flex items-center sm:hidden">
